@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script>
+				function func(){
+					document.getElementById("admin").innerHTML="<form method='POST' action='auth.php'>"
+					+"<br>Password : <input type='password' name='adminpass'/><input type='submit' value='Go'/></form>"
+					document.getElementById("admin").style.border='1px solid black';
+					document.getElementById("admin").style.padding='10px';
+					document.getElementById("admin").style.background="rgba(0,0,0,0.35)";
+				}
+		</script>
+		<style>
+		body{
+				background-image:url("ssn.png"),url("design4.jpg");
+				background-size:200px 100px,cover;
+				background-position:right bottom,center;
+				background-repeat:no-repeat,no-repeat;
+				color:black;
+			}
+			
+			#teacher,#student{
+				float:left;
+				border:1px solid black;
+				padding:10px;
+				background:rgba(0,0,0,0.75);
+				color:white;
+				margin:200px 0px 0px 200px;
+			}
+			.row{
+				display:table-row;
+				}
+			label,input{
+				display:table-cell;
+			}
+			
+		</style>
+	</head>
+    <body>
+	<button onclick="func()" style="float:left;">Admin</button>
+	<div id="admin" style="position:fixed; color:white;"></div>
+		
+        <div id="teacher" style="float:left; margin:200px 0px 0px 200px;">
+            <form method="post" action="tauth.php">
+                <center><h3>Teacher Log-in</h3></center>
+                <div class="row">
+                <label>ID :</label><input type="text" name="tid"/>
+                </div>
+				<div class="row">
+                <label>Password :</label><input type="password" name="tpass"/>
+               </div><br>
+                <center><input type="submit" value="Submit"/></center>
+            </form>
+        </div>
+
+        <div id="student" style="float:left; margin:200px 0px 0px 200px;">
+            <form method="POST" action="sauth.php">
+                <center><h3>Student Log-in</h3></center>
+                <div class="row">
+                <label>Register number :</label><input type="text" name="reg"/>
+                </div>
+				<div class="row">
+                <label>Date of Birth :</label><input type="date" name="dob" style="width:173px;"/>
+                </div><br>
+                <center><input type="submit" value="Submit"/></center>
+            </form>
+        </div>
+    </body>
+</html>
