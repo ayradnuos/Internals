@@ -1,4 +1,4 @@
-# Internals
+# Internals portal
 A mini-web application that deploys an internals portal using PHP, JavaScript, CSS, SQL on the wamp server.
 
 ## Features :
