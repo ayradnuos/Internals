@@ -67,5 +67,5 @@ A mini-web application that deploys an internals portal using PHP, JavaScript, C
   
 
 #### -> All the php, js, html files are stored in Code.
-#### -> All the images that have been used are saved in the folder images.
+#### -> All the images that have been used are in the base directory.
 #### -> The SS folder contains sample screenshots.
